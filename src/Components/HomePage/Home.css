@@ -1,0 +1,37 @@
+#home-main {
+  display: flex;
+}
+.home-sub {
+  background-color: red;
+  min-height: 50vh;
+  background-image: url("../../assets/home-poster.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 75vw;
+  box-shadow: inset 100px 100px 150px #121211;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.home-sub h1 {
+  margin-left: 2rem;
+  margin-top: 50vh;
+  font-size: 80px;
+}
+#button-div {
+  background-color: rgb(0, 0, 0);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 25vw;
+  color: white;
+}
+#button {
+  height: 6vh;
+  width: 15vw;
+  margin-top: 2rem;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+}

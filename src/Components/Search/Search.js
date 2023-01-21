@@ -46,6 +46,16 @@ function Search() {
     // console.log(res.data.Search);
   };
 
+
+    const trendingMovie=async()=>{
+        const res = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=bc3ab4f2543c6cf7322eda5564ceacfa`)
+        console.log(res);
+    }
+
+    useEffect(() => {
+      trendingMovie()
+    }, []);
+
   return (
     <div>
       <div id="search">

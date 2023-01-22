@@ -31,30 +31,20 @@ function Search() {
   const searchApiCall = async () => {
     const res = await axios.post(apiUrl + "&s=" + search);
     const fetchResult = res.data.Search;
-    // console.log(fetchResult);
-    //  console.log(setLoading());
+    
     if (fetchResult) {
       console.log("loading");
       setLoading(false);
-      console.log(loading);
       setSearchResult(res.data.Search);
     } else {
       console.log("no result");
       setLoading(true);
-      console.log(loading);
     }
-    // console.log(res.data.Search);
+   
   };
 
 
-    const trendingMovie=async()=>{
-        const res = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=bc3ab4f2543c6cf7322eda5564ceacfa`)
-        console.log(res);
-    }
-
-    useEffect(() => {
-      trendingMovie()
-    }, []);
+    
 
   return (
     <div>
@@ -86,14 +76,7 @@ function Search() {
       </div>
 
       <div className="category">
-        {/* <div className="movie-series-btn">
-          <Button style={{ height: "3rem" }} variant="text">
-            Movie
-          </Button>
-          <Button style={{ height: "3rem" }} variant="text">
-            Series
-          </Button>
-        </div> */}
+        
 
         <div id="movies-div">
           <h1 style={{ textAlign: "start", marginLeft: "2rem" }}>Movies</h1>

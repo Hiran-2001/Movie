@@ -6,9 +6,10 @@ function HomePage() {
     <div id="home-main">
       <div className="home-sub">
      <h1>THE WITCHER</h1>
+    
       </div>
       <div id="button-div">
-      <h3>WATCH MOVIE</h3>  
+      <h3>WATCH MOVIE..</h3>  
        <Button id="button">
           <Link style={{ textDecoration: "none", color: "white" }} to="/movies">
             Get Started

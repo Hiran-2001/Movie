@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import axios from "axios";
 import Button from "@mui/material/Button";
 import { TextField } from "@mui/material";
 import "./Search.css";
 import logo from "../../assets/logo.jpg";
-import Movies from "../Results/Movies";
-import Series from "../Results/Series";
 import { Link } from "react-router-dom";
 function Search() {
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  const [movie, setMovie] = useState([]);
-  const [series, setSeries] = useState([]);
   const [loading, setLoading] = useState(false);
 
   // search input handling
@@ -97,7 +93,7 @@ function Search() {
                           borderRadius: "15px 15px 0 0",
                         }}
                         src={e.Poster}
-                        alt="Loading Image..."
+                        alt="Loading"
                       />
 
                       <h6>{e.Title}</h6>
@@ -128,7 +124,7 @@ function Search() {
                           borderRadius: "15px 15px 0 0",
                         }}
                         src={e.Poster}
-                        alt="Image Loading..."
+                        alt="Loading..."
                       />
                       <h6>{e.Title}</h6>
                       <h6>{e.Year}</h6>

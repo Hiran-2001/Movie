@@ -1,8 +1,28 @@
 #home-main {
   display: flex;
 }
+@media only screen and (max-width: 600px) {
+  #home-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-sub h1 {
+    margin-left: 2rem;
+    margin-top: 50vh;
+    font-size: 30px;
+  }
+  #button-div{
+    background-color: red;
+  }
+  #button {
+    height: 10vh;
+    width: 15vw;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 21, 21));
+  }
+}
 .home-sub {
-  background-color: red;
+  /* background-color: red; */
   min-height: 50vh;
   background-image: url("../../assets/home-poster.jpg");
   background-repeat: no-repeat;
@@ -16,8 +36,8 @@
 }
 .home-sub h1 {
   margin-left: 2rem;
-  margin-top: 50vh;
-  font-size: 80px;
+  margin-top: 0vh;
+  font-size: 40px;
 }
 #button-div {
   background-color: rgb(0, 0, 0);
